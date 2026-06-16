@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    overflow: hidden;
+    background-color: white;
+}
+/* encabezado */
+
+header{
+    display: flex;
+    width: 100%;
+    height: 190px;
+    box-shadow: 2px 2px 1px black;
+    align-items: center;
+    transition: all 0,3s;
+}
+img{
+    margin-left: 160px;
+    width: 470px;
+    height: 150px;
+}
+
+header .buscar{
+    width: 40%;
+    height: 50px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px black;
+    border-radius: 5px;
+    margin-left: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+span{
+    padding: 20px;
+    color: black;
+}
+.material-symbols-outlined {
+    font-size: 65px;
+}
+/* Cuando pasa el mouse*/
+header .buscar:hover {
+    transform: scale(1.03); 
+    cursor: pointer;
+}
+/* fin del encabezado */
+
+/* la barra nav */
+
+.barra-nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.barra-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 25px;
+    transition: transform 1s ease;
+}
+
+.barra-nav a:hover{
+    transform: scale(1.03);
+    background-color: rgba(169, 169, 169, 0.237);
+    border-radius: 5px;
+    border: rgba(128, 128, 128, 0.762) solid;
+}
+
+/* Carrusel */
