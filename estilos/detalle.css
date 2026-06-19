@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.contenedor{
+    background-color: #fdf3e7; 
+    width: 100vw;             
+    height: 100vh;             
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+}
+
+.panel {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.02); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.imagen {
+    width: 280px;  
+    height: 400px;
+    background-color: #8fa89b;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.imagen1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.calificacion {
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+}
+
+.estrellas {
+    color: #ffcc00;
+    margin-right: 8px;
+}
+
+.botones {
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-primary a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.texto {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+}
+
+.contenido {
+    max-width: 800px; 
+    width: 100%;
+}
+
+/* Titulo */
+.titulo {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #000000;
+    line-height: 1;
+}
+
+.Subtitulo{
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #444444;
+    margin-top: 5px;
+}
+
+/* Textos */
+.sipnosis {
+    margin-bottom: 45px;
+}
+
+.sipnosis h3, .caja h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.sipnosis p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333333;
+    text-align: justify;
+}
+
+
+.cuadro {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 14px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    row-gap: 20px;
+    column-gap: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.texto-cuadro{
+    font-size: 1rem;
+    color: #333333;
+}
+
+.texto-cuadro strong {
+    width: 110px;
+    display: inline-block;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        height: auto; 
+        width: 100%;
+    }
+
+
+    .panel {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
+    }
+
+    .imagen {
+        width: 190px; 
+        height: 270px;
+        margin-bottom: 15px;
+    }
+
+    .calificacion {
+        margin-bottom: 25px;
+        font-size: 1rem;
+    }
+
+    .botones {
+        max-width: 100%; 
+        padding: 0 15px;
+    }
+
+    .btn {
+        padding: 14px 15px;
+        font-size: 1rem;
+    }
+
+    .texto {
+        width: 100%;
+        height: auto;
+        padding: 35px 20px;
+    }
+
+    .contenido {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .titulo-principal {
+        font-size: 2.2rem; 
+        letter-spacing: 1px;
+    }
+
+    .subtitulo{
+        font-size: 1.6rem;
+    }
+
+    .sipnosis {
+        margin-bottom: 30px;
+    }
+
+    .sipnosis h3, .caja h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .sipnosis p {
+        font-size: 0.98rem;
+        line-height: 1.6;
+        text-align: left; 
+    }
+
+    .caja {
+        padding: 20px;
+        grid-template-columns: 1fr; 
+        row-gap: 15px;
+    }
+
+    .texto-cuadro {
+        font-size: 0.95rem;
+        display: flex;
+        flex-direction: column; 
+        gap: 2px;
+    }
+
+    .texto-cuadro strong {
+        width: 100%;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        color: #666666; 
+    }
+}
