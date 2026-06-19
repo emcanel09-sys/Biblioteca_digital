@@ -370,6 +370,7 @@ tbody tr:last-child {
     margin-left: 30px;
     color: white;
 }
+}
 /* ==========================================================================
    MEDIA QUERIES (RESPONSIVE DESIGN)
    ========================================================================== */
@@ -482,6 +483,7 @@ tbody tr:last-child {
 
     .cuadro-principal {
         margin-top: 20px;
+        background-color: #00C3D0;
     }
 
 }
