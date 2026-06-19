@@ -1,0 +1,159 @@
+/* --- ESTILOS GENERALES Y RESET --- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    min-height: 100vh;
+    background-color: white;
+    font-family: "Arial", sans-serif;
+    overflow-x: hidden;
+}
+
+/* --- ENCABEZADO (HEADER) --- */
+header{
+    display: flex;
+    width: 100%;
+    height: 190px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    align-items: center;
+    justify-content: center; 
+}
+
+img{
+    margin-left: 160px;
+    width: 470px;
+    height: 150px;
+}
+
+/* --- CONTENEDOR PRINCIPAL LOGIN --- */
+.contenedor-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 140px); 
+    padding: 20px;
+}
+
+.login{
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login .ny{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgb(63, 126, 126);
+}
+
+/* --- CAMPOS DE ENTRADA --- */
+.contenedor-campos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.campos1, .campos2 {
+    width: 100%;
+}
+
+.contenedor-campos div input{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* --- BOTONES Y ENLACES --- */
+.boton{
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.boton a button{
+    width: 100%;
+    height: 45px;
+    background-color: #D9D9D9;
+    color: rgb(0, 0, 0);
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back{
+    background-color: #D9D9D9;
+    color: rgb(0, 0, 0);
+    padding: 8px 20px;
+    border-radius: 11px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back:hover{
+    background-color: rgb(95, 166, 166);
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 130px;
+    }
+    img {
+        margin-left: -50px;
+        width: 240px;
+        height: 100px;
+    }
+    .login .ny {
+        font-size: 1.8rem;
+    }    
+    .login {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    img {
+        margin-left: -400px;
+        width: 300px;
+    }
+    .login .ny {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 769px) {
+    header {
+        justify-content: flex-start; 
+    }
+    img {
+        margin-left: 100px;
+        width: 400px;
+    }
+    .login {
+        max-width: 600px;
+    }
+}
