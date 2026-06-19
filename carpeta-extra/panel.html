@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Biblioteca</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+
+    <header>
+        <img src="img2/WhatsApp Image 2026-06-16 at 2.16.32 PM.jpeg" alt="Logo">
+        <input class="buscar" type="search" placeholder="🔍 Buscar...">
+        <span class="material-symbols-outlined">menu</span>
+    </header>
+
+    <nav class="barra-nav">
+        <a href="">Inicio</a>
+        <a href="">Catalogo</a>
+        <a href="">Gestion de libros</a>
+        <a href="">Crear cuenta</a>
+        <a href="">Iniciar sesión</a>
+    </nav>
+
+    <main class="contenedor-panel">
+        
+        <section class="cuadrícula-tarjetas">
+            
+            <div class="tarjeta-metrica">
+                <div class="icono-tarjeta fondo-rosa">📖</div>
+                <div class="info-tarjeta">
+                    <h3>Total de libros</h3>
+                    <p class="contador">250</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-metrica">
+                <div class="icono-tarjeta fondo-naranja">❌</div>
+                <div class="info-tarjeta">
+                    <h3>Libros prestados</h3>
+                    <p class="contador">45</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-metrica">
+                <div class="icono-tarjeta fondo-azul">👥</div>
+                <div class="info-tarjeta">
+                    <h3>Usuarios registrados</h3>
+                    <p class="counter">120</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-metrica">
+                <div class="icono-tarjeta fondo-oscuro">🎛️</div>
+                <div class="info-tarjeta">
+                    <h3>Categorías</h3>
+                    <p class="contador">15</p>
+                </div>
+            </div>
+
+        </section>
+        
+        <section class="contenedor-tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Libro</th>
+                        <th>Autor</th>
+                        <th>Categoría</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="texto-negrita">Hasta que el verano se acabe</td>
+                        <td>Connor Hamilton</td>
+                        <td>Novela Romántica / Ficción Juvenil</td>
+                        <td><span class="estado disponible">🟢 Disponible (3)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="texto-negrita">El quinto infierno</td>
+                        <td>F. Oliverio</td>
+                        <td>Misterio / Terror / Suspense</td>
+                        <td><span class="estado disponible">🟢 Disponible (1)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="texto-negrita">Reyes caídos</td>
+                        <td>Julián Alonso</td>
+                        <td>Fantasía Oscura / Ficción Histórica</td>
+                        <td><span class="estado disponible">🟢 Disponible (4)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="texto-negrita">El zorro en el bosque</td>
+                        <td>Salma Dubois</td>
+                        <td>Literatura Infantil / Cuentos Ilustrados</td>
+                        <td><span class="estado disponible">🟢 Disponible (6)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="texto-negrita">Cada historia cuenta</td>
+                        <td>Varios autores</td>
+                        <td>Antología de Relatos / Ficción Contemporánea</td>
+                        <td><span class="estado disponible">🟢 Disponible (2)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="texto-negrita">Atlantis: Proyecto Tarsis</td>
+                        <td>José Enrique Serrano Expósito</td>
+                        <td>Ciencia Ficción / Aventura Marina</td>
+                        <td><span class="estado prestado">🔴 No disponible</span></td>
+                    </tr>
+                    <tr>
+                        <td class="texto-negrita">El Principito</td>
+                        <td>Antoine de Saint-Exupéry</td>
+                        <td>Literatura Clásica / Fábula Filosófica</td>
+                        <td><span class="estado disponible">🟢 Disponible (9)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="texto-negrita">La puerta del bosque</td>
+                        <td>Melissa Albert</td>
+                        <td>Fantasía Contemporánea / Realismo Mágico</td>
+                        <td><span class="estado disponible">🟢 Disponible (2)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="texto-negrita">¡Aquí hay un monstruo!</td>
+                        <td>Elena Paula</td>
+                        <td>Literatura Infantil / Primeros Lectores</td>
+                        <td><span class="estado disponible">🟢 Disponible (5)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="texto-negrita">Aquel bosque de magia</td>
+                        <td>Amelia Ocampo</td>
+                        <td>Fantasía de Hadas / Ficción Juvenil</td>
+                        <td><span class="estado disponible">🟢 Disponible (3)</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</body>
+</html>

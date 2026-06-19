@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/gestion.css">
+    <title>Gestión de Libros</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    
+    <header>
+        <img src="img/WhatsApp Image 2026-06-16 at 2.16.32 PM.jpeg" alt="">
+        <input class="buscar" type="search" placeholder="🔍">
+        <span class="material-symbols-outlined">menu</span>
+    </header>
+
+    <nav class="barra-nav">
+        <a href="">Inicio</a>
+        <a href="">Catalogo</a>
+        <a href="">Gestion de libros</a>
+        <a href="">Crear cuenta</a>
+        <a href="">Iniciar sesión</a>
+    </nav>
+
+    <h2 class="seccion-titulo">Gestión de Libros</h2>
+
+    <div class="tabla-contenedor">
+        <table>
+            <thead>
+                <tr>
+                    <th>Portada</th>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Categoría</th>
+                    <th>ISBN</th>
+                    <th>Año</th>
+                    <th>Ejemplares</th>
+                    <th>Disponibles</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="img/img a.jpeg" alt="Portada" class="libro-portada"></td>
+                    <td><a href="#" class="enlace-libro">Hasta que el verano se acabe</a></td>
+                    <td><a href="#" class="enlace-autor">Connor Hamilton</a></td>
+                    <td>Novela Romántica</td>
+                    <td>978-84-123456-0-1</td>
+                    <td>2022</td>
+                    <td class="texto-centrado numero-conteo">5</td>
+                    <td class="texto-centrado numero-conteo">2</td>
+                    <td>
+                        <div class="acciones-contenedor">
+                            <span class="material-symbols-outlined editar-icono">edit</span>
+                            <span class="material-symbols-outlined eliminar-icono">cancel</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img b.jpeg" alt="Portada" class="libro-portada"></td>
+                    <td><a href="#" class="enlace-libro">El quinto infierno</a></td>
+                    <td><a href="#" class="enlace-autor">F. Oliverio</a></td>
+                    <td>Misterio / Terror / Suspense</td>
+                    <td>978-84-123456-0-2</td>
+                    <td>2021</td>
+                    <td class="texto-centrado numero-conteo">5</td>
+                    <td class="texto-centrado numero-conteo">2</td>
+                    <td>
+                        <div class="acciones-contenedor">
+                            <span class="material-symbols-outlined editar-icono">edit</span>
+                            <span class="material-symbols-outlined eliminar-icono">cancel</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img c.jpeg" alt="Portada" class="libro-portada"></td>
+                    <td><a href="#" class="enlace-libro">Reyes caídos</a></td>
+                    <td><a href="#" class="enlace-autor">Julián Alonso</a></td>
+                    <td>Fantasía Oscura</td>
+                    <td>978-84-123456-0-3</td>
+                    <td>2023</td>
+                    <td class="texto-centrado numero-conteo">5</td>
+                    <td class="texto-centrado numero-conteo">2</td>
+                    <td>
+                        <div class="acciones-contenedor">
+                            <span class="material-symbols-outlined editar-icono">edit</span>
+                            <span class="material-symbols-outlined eliminar-icono">cancel</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img d.jpeg" alt="Portada" class="libro-portada"></td>
+                    <td><a href="#" class="enlace-libro">El zorro en el bosque</a></td>
+                    <td><a href="#" class="enlace-autor">Salma Dubois</a></td>
+                    <td>Literatura Infantil</td>
+                    <td>978-84-123456-0-4</td>
+                    <td>2020</td>
+                    <td class="texto-centrado numero-conteo">5</td>
+                    <td class="texto-centrado numero-conteo">2</td>
+                    <td>
+                        <div class="acciones-contenedor">
+                            <span class="material-symbols-outlined editar-icono">edit</span>
+                            <span class="material-symbols-outlined eliminar-icono">cancel</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img e.jpeg" alt="Portada" class="libro-portada"></td>
+                    <td><a href="#" class="enlace-libro">Cada historia cuenta</a></td>
+                    <td><a href="#" class="enlace-autor">Varios autores</a></td>
+                    <td>Ficción Contemporánea</td>
+                    <td>978-84-123456-0-5</td>
+                    <td>2019</td>
+                    <td class="texto-centrado numero-conteo">5</td>
+                    <td class="texto-centrado numero-conteo">2</td>
+                    <td>
+                        <div class="acciones-contenedor">
+                            <span class="material-symbols-outlined editar-icono">edit</span>
+                            <span class="material-symbols-outlined eliminar-icono">cancel</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img f.jpeg" alt="Portada" class="libro-portada"></td>
+                    <td><a href="#" class="enlace-libro">Atlantis: Proyecto Tarsis</a></td>
+                    <td><a href="#" class="enlace-autor">José Enrique Serrano Expósito</a></td>
+                    <td>Ciencia Ficción</td>
+                    <td>978-84-123456-0-6</td>
+                    <td>2024</td>
+                    <td class="texto-centrado numero-conteo">3</td>
+                    <td class="texto-centrado numero-conteo">3</td>
+                    <td>
+                        <div class="acciones-contenedor">
+                            <span class="material-symbols-outlined editar-icono">edit</span>
+                            <span class="material-symbols-outlined eliminar-icono">cancel</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img g.jpeg" alt="Portada" class="libro-portada"></td>
+                    <td><a href="#" class="enlace-libro">El Principito</a></td>
+                    <td><a href="#" class="enlace-autor">Antoine de Saint-Exupéry</a></td>
+                    <td>Literatura Clásica</td>
+                    <td>978-3-16-148410-0</td>
+                    <td>1943</td>
+                    <td class="texto-centrado numero-conteo">8</td>
+                    <td class="texto-centrado numero-conteo">4</td>
+                    <td>
+                        <div class="acciones-contenedor">
+                            <span class="material-symbols-outlined editar-icono">edit</span>
+                            <span class="material-symbols-outlined eliminar-icono">cancel</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img h.jpeg" alt="Portada" class="libro-portada"></td>
+                    <td><a href="#" class="enlace-libro">La puerta del bosque</a></td>
+                    <td><a href="#" class="enlace-autor">Melissa Albert</a></td>
+                    <td>Fantasía Contemporánea</td>
+                    <td>978-84-918195-2-3</td>
+                    <td>2020</td>
+                    <td class="texto-centrado numero-conteo">6</td>
+                    <td class="texto-centrado numero-conteo">1</td>
+                    <td>
+                        <div class="acciones-contenedor">
+                            <span class="material-symbols-outlined editar-icono">edit</span>
+                            <span class="material-symbols-outlined eliminar-icono">cancel</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img i.jpeg" alt="Portada" class="libro-portada"></td>
+                    <td><a href="#" class="enlace-libro">¡Aquí hay un monstruo!</a></td>
+                    <td><a href="#" class="enlace-autor">Elena Paula</a></td>
+                    <td>Literatura Infantil</td>
+                    <td>978-84-123456-0-9</td>
+                    <td>2024</td>
+                    <td class="texto-centrado numero-conteo">4</td>
+                    <td class="texto-centrado numero-conteo">2</td>
+                    <td>
+                        <div class="acciones-contenedor">
+                            <span class="material-symbols-outlined editar-icono">edit</span>
+                            <span class="material-symbols-outlined eliminar-icono">cancel</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="img/img j.jpeg" alt="Portada" class="libro-portada"></td>
+                    <td><a href="#" class="enlace-libro">Aquel bosque de magia</a></td>
+                    <td><a href="#" class="enlace-autor">Amelia Ocampo</a></td>
+                    <td>Fantasía de Hadas</td>
+                    <td>978-84-123456-0-0</td>
+                    <td>2021</td>
+                    <td class="texto-centrado numero-conteo">5</td>
+                    <td class="texto-centrado numero-conteo">5</td>
+                    <td>
+                        <div class="acciones-contenedor">
+                            <span class="material-symbols-outlined editar-icono">edit</span>
+                            <span class="material-symbols-outlined eliminar-icono">cancel</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="carrusel-contenedor">
+        
+        <div class="tarjeta-libro">
+            <span class="etiqueta-disponibles">Disp: 2</span>
+            <img src="img/img a.jpeg" alt="Portada" class="portada-tarjeta">
+            <h3><a href="#">Hasta que el verano se acabe</a></h3>
+            <p class="autor">Connor Hamilton</p>
+            <p class="categoria">Novela Romántica</p>
+            <div class="info-pie-tarjeta">
+                <span>Año: 2022</span>
+                <span>Ejemplares: 5</span>
+            </div>
+            <div class="acciones-carrusel">
+                <span class="material-symbols-outlined editar-icono-m">edit</span>
+                <span class="material-symbols-outlined eliminar-icono-m">cancel</span>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro">
+            <span class="etiqueta-disponibles">Disp: 2</span>
+            <img src="img/img b.jpeg" alt="Portada" class="portada-tarjeta">
+            <h3><a href="#">El quinto infierno</a></h3>
+            <p class="autor">F. Oliverio</p>
+            <p class="categoria">Misterio / Terror / Suspense</p>
+            <div class="info-pie-tarjeta">
+                <span>Año: 2021</span>
+                <span>Ejemplares: 5</span>
+            </div>
+            <div class="acciones-carrusel">
+                <span class="material-symbols-outlined editar-icono-m">edit</span>
+                <span class="material-symbols-outlined eliminar-icono-m">cancel</span>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro">
+            <span class="etiqueta-disponibles">Disp: 2</span>
+            <img src="img/img c.jpeg" alt="Portada" class="portada-tarjeta">
+            <h3><a href="#">Reyes caídos</a></h3>
+            <p class="autor">Julián Alonso</p>
+            <p class="categoria">Fantasía Oscura</p>
+            <div class="info-pie-tarjeta">
+                <span>Año: 2023</span>
+                <span>Ejemplares: 5</span>
+            </div>
+            <div class="acciones-carrusel">
+                <span class="material-symbols-outlined editar-icono-m">edit</span>
+                <span class="material-symbols-outlined eliminar-icono-m">cancel</span>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro">
+            <span class="etiqueta-disponibles">Disp: 2</span>
+            <img src="img/img d.jpeg" alt="Portada" class="portada-tarjeta">
+            <h3><a href="#">El zorro en el bosque</a></h3>
+            <p class="autor">Salma Dubois</p>
+            <p class="categoria">Literatura Infantil</p>
+            <div class="info-pie-tarjeta">
+                <span>Año: 2020</span>
+                <span>Ejemplares: 5</span>
+            </div>
+            <div class="acciones-carrusel">
+                <span class="material-symbols-outlined editar-icono-m">edit</span>
+                <span class="material-symbols-outlined eliminar-icono-m">cancel</span>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro">
+            <span class="etiqueta-disponibles">Disp: 2</span>
+            <img src="img/img e.jpeg" alt="Portada" class="portada-tarjeta">
+            <h3><a href="#">Cada historia cuenta</a></h3>
+            <p class="autor">Varios autores</p>
+            <p class="categoria">Ficción Contemporánea</p>
+            <div class="info-pie-tarjeta">
+                <span>Año: 2019</span>
+                <span>Ejemplares: 5</span>
+            </div>
+            <div class="acciones-carrusel">
+                <span class="material-symbols-outlined editar-icono-m">edit</span>
+                <span class="material-symbols-outlined eliminar-icono-m">cancel</span>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro">
+            <span class="etiqueta-disponibles">Disp: 3</span>
+            <img src="img/img f.jpeg" alt="Portada" class="portada-tarjeta">
+            <h3><a href="#">Atlantis: Proyecto Tarsis</a></h3>
+            <p class="autor">José Enrique Serrano Expósito</p>
+            <p class="categoria">Ciencia Ficción</p>
+            <div class="info-pie-tarjeta">
+                <span>Año: 2024</span>
+                <span>Ejemplares: 3</span>
+            </div>
+            <div class="acciones-carrusel">
+                <span class="material-symbols-outlined editar-icono-m">edit</span>
+                <span class="material-symbols-outlined eliminar-icono-m">cancel</span>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro">
+            <span class="etiqueta-disponibles">Disp: 4</span>
+            <img src="img/img g.jpeg" alt="Portada" class="portada-tarjeta">
+            <h3><a href="#">El Principito</a></h3>
+            <p class="autor">Antoine de Saint-Exupéry</p>
+            <p class="categoria">Literatura Clásica</p>
+            <div class="info-pie-tarjeta">
+                <span>Año: 1943</span>
+                <span>Ejemplares: 8</span>
+            </div>
+            <div class="acciones-carrusel">
+                <span class="material-symbols-outlined editar-icono-m">edit</span>
+                <span class="material-symbols-outlined eliminar-icono-m">cancel</span>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro">
+            <span class="etiqueta-disponibles">Disp: 1</span>
+            <img src="img/img h.jpeg" alt="Portada" class="portada-tarjeta">
+            <h3><a href="#">La puerta del bosque</a></h3>
+            <p class="autor">Melissa Albert</p>
+            <p class="categoria">Fantasía Contemporánea</p>
+            <div class="info-pie-tarjeta">
+                <span>Año: 2020</span>
+                <span>Ejemplares: 6</span>
+            </div>
+            <div class="acciones-carrusel">
+                <span class="material-symbols-outlined editar-icono-m">edit</span>
+                <span class="material-symbols-outlined eliminar-icono-m">cancel</span>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro">
+            <span class="etiqueta-disponibles">Disp: 2</span>
+            <img src="img/img i.jpeg" alt="Portada" class="portada-tarjeta">
+            <h3><a href="#">¡Aquí hay un monstruo!</a></h3>
+            <p class="autor">Elena Paula</p>
+            <p class="categoria">Literatura Infantil</p>
+            <div class="info-pie-tarjeta">
+                <span>Año: 2024</span>
+                <span>Ejemplares: 4</span>
+            </div>
+            <div class="acciones-carrusel">
+                <span class="material-symbols-outlined editar-icono-m">edit</span>
+                <span class="material-symbols-outlined eliminar-icono-m">cancel</span>
+            </div>
+        </div>
+
+        <div class="tarjeta-libro">
+            <span class="etiqueta-disponibles">Disp: 5</span>
+            <img src="img/img j.jpeg" alt="Portada" class="portada-tarjeta">
+            <h3><a href="#">Aquel bosque de magia</a></h3>
+            <p class="autor">Amelia Ocampo</p>
+            <p class="categoria">Fantasía de Hadas</p>
+            <div class="info-pie-tarjeta">
+                <span>Año: 2021</span>
+                <span>Ejemplares: 5</span>
+            </div>
+            <div class="acciones-carrusel">
+                <span class="material-symbols-outlined editar-icono-m">edit</span>
+                <span class="material-symbols-outlined eliminar-icono-m">cancel</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
