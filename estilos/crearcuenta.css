@@ -1,0 +1,328 @@
+body{
+
+margin:0;
+background:#d9d9d9;
+min-height:100vh;
+font-family:Arial;
+
+}
+
+/* encabezado */
+
+header{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 190px;
+    box-shadow: 2px 2px 1px black;
+    align-items: center;
+    transition: all 0,3s;
+}
+img{
+    margin-left: 160px;
+    width: 470px;
+    height: 150px;
+}
+
+header .buscar{
+    width: 40%;
+    height: 50px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px black;
+    border-radius: 5px;
+    margin-left: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+span{
+    padding: 20px;
+    color: black;
+}
+.material-symbols-outlined {
+    font-size: 65px;
+}
+
+.log{
+    font-size: 40px;
+    margin-top: -15px;
+    text-decoration: none;
+}
+/* Cuando pasa el mouse*/
+header .buscar:hover {
+    transform: scale(1.03); 
+    cursor: pointer;
+}
+/* fin del encabezado */
+
+.barra-nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.barra-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 25px;
+    transition: transform 1s ease;
+}
+
+.barra-nav a:hover{
+    transform: scale(1.03);
+    background-color: rgba(169, 169, 169, 0.237);
+    border-radius: 5px;
+    border: rgba(128, 128, 128, 0.762) solid;
+}
+
+
+.contenedor{
+
+display:flex;
+justify-content:center;
+padding-top:80px;
+padding-bottom:80px;
+
+}
+
+
+/* TARJETA */
+
+.formulario{
+
+width:800px;
+background:white;
+padding:50px;
+border-radius:30px;
+
+}
+
+
+h1{
+
+text-align:center;
+font-style:italic;
+
+}
+
+
+.formulario p{
+text-align:center;
+}
+
+
+.contenido{
+
+display:flex;
+justify-content:space-around;
+margin-top:40px;
+
+}
+
+
+.campos{
+
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+input{
+width:260px;
+padding:15px;
+border:1px solid gray;
+
+}
+
+
+.social{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+
+}
+
+
+.facebook,
+.google{
+
+width:180px;
+height:50px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+
+.facebook{
+
+background:#90aed8;
+
+}
+
+
+.google{
+
+background:#e8c0c0;
+
+}
+
+
+.crear{
+
+display:block;
+margin:40px auto;
+width:240px;
+height:55px;
+border:none;
+border-radius:15px;
+background:#d7d7d7;
+cursor:pointer;
+
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width:1024px){
+
+.contenedor{
+
+padding:50px 20px;
+
+}
+
+
+.formulario{
+
+width:90%;
+padding:40px;
+
+}
+
+
+.contenido{
+
+gap:40px;
+
+}
+
+
+input{
+
+width:220px;
+
+}
+
+}
+
+
+/* ===== CELULAR ===== */
+
+@media (max-width:768px){
+
+.contenedor{
+
+padding:40px 15px;
+
+}
+
+
+.formulario{
+
+width:90%;
+padding:30px;
+
+}
+
+
+.contenido{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:35px;
+
+}
+
+
+.campos{
+
+width:100%;
+align-items:center;
+
+}
+
+
+input{
+
+width:90%;
+
+}
+
+
+.social{
+
+width:100%;
+
+}
+
+
+.facebook,
+.google{
+
+width:90%;
+
+}
+
+
+.crear{
+width:90%;
+}
+
+
+h1{
+font-size:30px;
+}
+
+}
+
+
+/* ===== CELULARES  ===== */
+
+@media (max-width:480px){
+
+.formulario{
+
+padding:20px;
+
+}
+
+
+input{
+
+width:100%;
+padding:12px;
+
+}
+
+
+.facebook,
+.google{
+height:45px;
+}
+
+
+.crear{
+height:50px;
+}
+
+
+h1{
+font-size:25px;
+}
+
+}
