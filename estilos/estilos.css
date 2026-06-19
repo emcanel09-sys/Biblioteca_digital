@@ -82,7 +82,7 @@ header .buscar:hover {
 }
 
 /* Carrusel */
-<<<<<<< HEAD
+
 
 * {
     margin: 0;
@@ -341,7 +341,7 @@ tbody tr:last-child {
     .buscador-contenedor { max-width: 100%; width: 100%; }
     
     .seccion-titulo { margin: 25px 0 5px 25px; font-size: 22px; }
-=======
+
 .carousel {
     max-width: 1000px; 
     margin: 30px auto; 
@@ -483,5 +483,5 @@ tbody tr:last-child {
     .cuadro-principal {
         margin-top: 20px;
     }
->>>>>>> 5763a530c442bc6e946cb1a6b1c618e1989cbb06
+
 }
