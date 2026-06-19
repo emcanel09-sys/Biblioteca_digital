@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    background-color: white;
+}
+/* encabezado */
+
+header{
+    display: flex;
+    width: 100%;
+    height: 190px;
+    box-shadow: 2px 2px 1px black;
+    align-items: center;
+    transition: all 0,3s;
+}
+img{
+    margin-left: 160px;
+    width: 470px;
+    height: 150px;
+}
+
+header .buscar{
+    width: 40%;
+    height: 50px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px black;
+    border-radius: 5px;
+    margin-left: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+span{
+    padding: 20px;
+    color: black;
+}
+.material-symbols-outlined {
+    font-size: 65px;
+}
+
+.log{
+    font-size: 40px;
+    margin-top: -15px;
+    text-decoration: none;
+}
+/* Cuando pasa el mouse*/
+header .buscar:hover {
+    transform: scale(1.03); 
+    cursor: pointer;
+}
+/* fin del encabezado */
+
+.barra-nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.barra-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 25px;
+    transition: transform 1s ease;
+}
+
+.barra-nav a:hover{
+    transform: scale(1.03);
+    background-color: rgba(169, 169, 169, 0.237);
+    border-radius: 5px;
+    border: rgba(128, 128, 128, 0.762) solid;
+}
+
+
+/* celular */
+@media(max-width: 490px){
+    body{
+        overflow-x: hidden;
+
+    }
+    .contenedor{
+   
+   grid-template-columns: repeat(1, 1fr);
+   }
+   
+}
+
+/* tablet */
+
+@media(max-width: 1200px){
+.contenedor{
+    width: 90%;
+    height: 900px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   border-radius: 15px;
+   background-color: rgba(105, 105, 105, 0);
+   margin-top: 20px;
+   padding: 45px;
+   align-items: center;
+   
+}
+
+.contenedor-libros img{
+    width: 240px;
+    height: 320px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+     filter: drop-shadow(0 10px 10px rgb(0, 0, 0));
+    
+}
+
+
+.contenedor .contenedor-libros{
+    width: 300px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 30px;
+    object-fit: cover;
+    background-color: rgba(152, 170, 165, 0.225);
+    box-shadow: 1px 1px 1px 1px rgba(55, 53, 53, 0.523);
+}
+.contenedor-libros h5{
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.contenedor-libros p{
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+}
+
+/* compu */
+
+@media(min-width: 1400px){
+
+
+/* contenedor libros */
+
+.contenedor{
+    width: 100%;
+    height: auto;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   border-radius: 15px;
+   background-color: rgba(105, 105, 105, 0.116);
+   margin-top: 20px;
+   padding: 45px;
+   
+}
+
+
+.contenedor-libros img{
+    width: 240px;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    transition: transform 1s ease;
+    
+}
+
+.contenedor-libros img:hover{
+    transform: scale(1.3);
+    filter: drop-shadow(0 10px 10px rgb(0, 0, 0));
+}
+
+.contenedor .contenedor-libros{
+    width: 300px;
+    height: 390px;
+    border-radius: 30px;
+    object-fit: cover;
+    background-color: rgba(152, 170, 165, 0);
+    transition: .3s;
+}
+
+.contenedor .contenedor-libros:hover{
+    transform: translateY(-8px);
+     box-shadow: 1px 1px 1px 1px rgba(55, 53, 53, 0.523);
+}
+
+.contenedor-libros h5{
+    font-size: 18px;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.contenedor .contenedor-libros .boton p{
+    transition: .3s;
+}
+.contenedor .contenedor-libros .boton:hover{
+    background-color: rgba(169, 169, 169, 0.677);
+    transform: translateY(-5px);
+}
+}
+
+
+/*  */
+.contenedor .contenedor-libros .boton{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(168, 172, 131);
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+}
+
+.contenedor .contenedor-libros .boton p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.contenedor .contenedor-libros .boton:hover{
+    background-color: rgba(169, 169, 169, 0.677);
+}
