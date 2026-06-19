@@ -45,6 +45,11 @@ span{
     font-size: 65px;
 }
 
+.log{
+    font-size: 40px;
+    margin-top: -15px;
+}
+
 /* Cuando pasa el mouse*/
 header .buscar:hover {
     transform: scale(1.03); 
