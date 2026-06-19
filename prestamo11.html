@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Préstamo de Libro</title>
+    <link rel="stylesheet" href="estilos/prestamo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="contenedor">
+        
+        <section class="panel">
+            <div class="imagen">
+                <img src="img/imagen11.webp" alt="Cada historia cuenta" class="book-cover">
+            </div>
+            
+            <div class="nota">
+                <span class="estrellas">★★★★★</span>
+                <span class="text">(5/5)</span>
+            </div>
+            
+            <div class="accion">
+    
+    <input type="checkbox" id="toggle-reserva" class="reserve-checkbox">
+    <label for="toggle-reserva" class="btn btn-primary btn-reserve-label">
+        <span class="text-disponible">Reservar</span>
+        <span class="text-reservado">Reservado</span>
+    </label>
+
+    <button type="button" class="btn btn-primary"><a href="catalogo.html">Catalogo</a></button>
+    <button type="button" class="btn btn-primary"><a href="index.html">Inicio</a></button>
+</div>
+        </section>
+
+        <section class="form-panel">
+            <header class="loan-header">
+                <h1 class="main-title">Préstamo de libro</h1>
+                <p class="estado"><span class="no-disponible">☓</span> No Disponible</p>
+            </header>
+
+            <form class="loan-form">
+                <div class="input-group">
+                    <label for="return-date">Detalles del prestamo</label>
+                    <input type="text" id="return-date" placeholder="Fecha de devolución" name="return-date">
+                </div>
+
+                <div class="input-group">
+                    <label for="format-type">Tipo de formato</label>
+                    <input type="text" id="format-type" placeholder="Fisico/Digital" name="format-type">
+                </div>
+
+                <div class="input-group">
+                    <label for="book-code">Código de libro</label>
+                    <input type="text" id="book-code" placeholder="Código" name="book-code">
+                </div>
+            </form>
+        </section>
+
+        <section class="right-panel">
+            <div class="conditions-box">
+                <h3>Condiciones y Responsabilidad:</h3>
+                
+                <div class="conditions-blank-card">
+                    <h4>Al llevarte un libro, te comprometes a cuidarlo y a devolverlo a tiempo y en perfecto estado. En caso de pérdida, retraso o daño, serás responsable de su reposión o de la sanción correspondiente.</h4>
+                    </div>
+                    
+            </div>
+
+            <div class="summary-box">
+                <h3>Resumen de prestamo:</h3>
+                <div class="summary-card">
+                    <div class="summary-item">
+                        <strong>Titulo:</strong>
+                        <span>Lo Que El Viento Se Llevo.</span>
+                    </div>
+                    <div class="summary-item">
+                        <strong>Fecha de devolucion:</strong>
+                        <span>16 de Julio del 2026</span>
+                    </div>
+                    <div class="summary-item">
+                        <strong>Formato:</strong>
+                        <span>Digital</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

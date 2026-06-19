@@ -1,23 +1,26 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
  
 body{
-    overflow: hidden;
+    overflow-x: hidden; 
     background-color: white;
 }
-/* encabezado */
 
+/* encabezado */
 header{
     display: flex;
     width: 100%;
     height: 190px;
     box-shadow: 2px 2px 1px black;
     align-items: center;
-    transition: all 0,3s;
+    transition: all 0.3s; 
 }
-img{
+
+/* imagen carrusel */
+header img{
     margin-left: 160px;
     width: 470px;
     height: 150px;
@@ -37,9 +40,16 @@ span{
     padding: 20px;
     color: black;
 }
+
 .material-symbols-outlined {
     font-size: 65px;
 }
+
+.log{
+    font-size: 40px;
+    margin-top: -15px;
+}
+
 /* Cuando pasa el mouse*/
 header .buscar:hover {
     transform: scale(1.03); 
@@ -50,7 +60,6 @@ header .buscar:hover {
 
 
 /* la barra nav */
-
 .barra-nav{
     display: flex;
     justify-content: space-evenly;
@@ -73,6 +82,7 @@ header .buscar:hover {
 }
 
 /* Carrusel */
+<<<<<<< HEAD
 
 * {
     margin: 0;
@@ -331,4 +341,147 @@ tbody tr:last-child {
     .buscador-contenedor { max-width: 100%; width: 100%; }
     
     .seccion-titulo { margin: 25px 0 5px 25px; font-size: 22px; }
+=======
+.carousel {
+    max-width: 1000px; 
+    margin: 30px auto; 
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 500px;     
+
+    width: -10px;
+}
+
+/* cuadro */
+.cuadro-principal {
+    background-color: #00C3D0;
+    margin-top: 40px; 
+    width: 100%; 
+    padding: 20px 0; 
+    display: flex;
+    align-items: center; 
+}
+
+.an {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 30px;
+    color: white;
+}
+/* ==========================================================================
+   MEDIA QUERIES (RESPONSIVE DESIGN)
+   ========================================================================== */
+
+/* 1. DISPOSITIVOS MÓVILES (Teléfonos en vertical y horizontal - Hasta 767px) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column; /* Apila el logo, buscador e ícono verticalmente */
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    header img {
+        margin-left: 0; /* Centra el logo */
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    header .buscar {
+        width: 90%;
+        margin-left: 0; /* Centra el buscador */
+        height: 40px;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 40px;
+    }
+
+    /* Barra de navegación */
+    .barra-nav {
+        flex-direction: column; /* Menú en lista vertical */
+        text-align: center;
+    }
+
+    .barra-nav a {
+        padding: 15px;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    /* Carrusel */
+    .carousel {
+        margin: 15px auto;
+    }
+
+    .carousel-item img {
+        max-height: 500px;  /* Evita que imágenes exageradamente gigantes rompan el diseño */
+        width: auto !important;  /* Ignora el w-100 de Bootstrap para conservar su ancho real */
+        height: auto !important; /* Conserva su alto real proporcional */
+        display: inline-block !important; /* Cambiado de d-block a inline-block para que funcione el centrado */
+        margin-left: 50px;
+    }
+
+    /* Cuadro de contacto */
+    .cuadro-principal {
+        padding: 20px;
+    }
+
+    .an {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+}
+
+/* 2. TABLETS (Pantallas medianas - Desde 768px hasta 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        margin-left: 30px;
+    }
+
+    header img {
+        margin-left: 0; /* Centra el logo */
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    header .buscar {
+        width: 90%;
+        margin-left: 0; /* Centra el buscador */
+        height: 40px;
+    }
+
+    header .buscar {
+        width: 350px; /* Ajusta el buscador para que quepa bien */
+        margin-left: 0;
+    }
+    .carousel-item img {
+        max-height: 700px;  /* Evita que imágenes exageradamente gigantes rompan el diseño */
+        max-width:700px ;  /* Ignora el w-100 de Bootstrap para conservar su ancho real */
+        height: auto !important; /* Conserva su alto real proporcional */ /* Cambiado de d-block a inline-block para que funcione el centrado */
+        margin-left: 30px;
+    }
+
+    .cuadro-principal {
+        margin-top: 20px;
+    }
+}
+
+/* 3. LAPTOPS / PANTALLAS GRANDES (Desde 1025px en adelante) */
+/* Nota: Aquí reparamos el bug del width de tu carrusel original */
+@media (min-width: 1025px) {
+    .carousel-item img {
+        max-height: 700px;  /* Evita que imágenes exageradamente gigantes rompan el diseño */
+        max-width:700px ;  /* Ignora el w-100 de Bootstrap para conservar su ancho real */
+        height: auto !important; /* Conserva su alto real proporcional */ /* Cambiado de d-block a inline-block para que funcione el centrado */
+        margin-left: 350px;
+    }
+
+    .cuadro-principal {
+        margin-top: 20px;
+    }
+>>>>>>> 5763a530c442bc6e946cb1a6b1c618e1989cbb06
 }
